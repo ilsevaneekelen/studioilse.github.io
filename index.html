@@ -9,37 +9,40 @@
 body{
 margin:0;
 font-family: Arial, sans-serif;
+background: rgba(255,182,193,0.25);
+text-align:center;
 }
 
-.hero{
-position:relative;
-}
+/* FOTO */
 
 .hero img{
-max-width:90%;
+width:auto;
+max-width:100%;
 max-height:90vh;
 display:block;
 margin:auto;
 }
 
-/* TEKST OP FOTO */
+/* MENU */
 
-.title{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%, -50%);
+.menu{
+margin-top:30px;
+margin-bottom:40px;
+}
+
+.menu a{
+display:inline-block;
+margin:10px;
+padding:12px 24px;
+background:#ff4fa3;
 color:white;
-text-align:center;
+text-decoration:none;
+border-radius:8px;
+font-size:18px;
 }
 
-.title h1{
-font-size:60px;
-margin:0;
-}
-
-.title p{
-font-size:22px;
+.menu a:hover{
+background:#ff2f92;
 }
 
 </style>
@@ -49,11 +52,14 @@ font-size:22px;
 <body>
 
 <div class="hero">
-
 <img src="homepage.jpeg">
+</div>
 
-
-
+<div class="menu">
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">Over mij</a>
+<a href="workshops.html">Workshops</a>
+<a href="contact.html">Contact</a>
 </div>
 
 </body>
