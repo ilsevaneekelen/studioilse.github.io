@@ -5,6 +5,7 @@
 <title>Studio Ilse</title>
 
 <style>
+
 body {
   margin: 0;
   height: 100vh;
@@ -13,19 +14,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
 }
-  nav {
+
+/* MENU */
+
+nav {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 40px;
 }
 
 nav a {
   text-decoration: none;
   color: #333;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
   margin-left: 25px;
+  font-size: 18px;
   background: rgba(255,255,255,0.7);
   padding: 8px 14px;
   border-radius: 6px;
@@ -34,19 +38,43 @@ nav a {
 nav a:hover {
   background: rgba(255,255,255,0.9);
 }
+
+/* TEKST OP FOTO */
+
+.hero {
+  position: absolute;
+  left: 60px;
+  bottom: 80px;
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 </style>
 
 </head>
 
 <body>
+
 <nav>
-  <a href="index.html">Home</a>
-  <a href="portfolio.html">Portfolio</a>
-  <a href="about.html">Over mij</a>
-  <a href="contact.html">Contact</a>
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">Over mij</a>
+<a href="contact.html">Contact</a>
 </nav>
 
+<div class="hero">
+<h1>Welkom bij Studio Ilse</h1>
+<p>Creatieve ideeën, projecten en workshops</p>
+</div>
 
 </body>
-
 </html>
