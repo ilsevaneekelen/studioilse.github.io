@@ -4,21 +4,36 @@
 <meta charset="UTF-8">
 <title>Workshops - Studio Ilse</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+
 <style>
 
-body
- <div class="nav">
-<a href="index.html">Home</a>
-<a href="portfolio.html">Portfolio</a>
-<a href="about.html">Over mij</a>
-<a href="workshops.html">Workshops</a>
-<a href="agenda.html">Agenda</a>
-<a href="contact.html">Contact</a>
-</div> {
+body{
 margin:0;
-font-family: Arial, sans-serif;
+font-family:'Open Sans', sans-serif;
 background: rgba(255,182,193,0.25);
 text-align:center;
+}
+
+/* NAV */
+
+.nav{
+background: rgba(255,182,193,0.9);
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+.nav a:hover{
+color:#ff4fa3;
 }
 
 /* CONTAINER */
@@ -32,38 +47,43 @@ border-radius:15px;
 box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
-/* TEKST */
+/* TITELS */
 
 h1{
+font-family:'Playfair Display', serif;
 margin-top:0;
 }
 
 h2{
-margin-top:30px;
+font-family:'Playfair Display', serif;
+margin-top:20px;
 }
+
+/* TEKST */
 
 p{
 line-height:1.6;
 margin:10px 0;
 }
 
-/* VIDEO'S */
+/* FOTO'S */
 
-.video{
+.gallery{
 margin-top:30px;
 }
 
-video{
+.gallery img{
 width:100%;
-max-width:350px;
+max-width:320px;
 margin:10px;
-border-radius:10px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* RESPONSIVE (naast elkaar op groter scherm) */
+/* naast elkaar op groot scherm */
 
-@media (min-width: 700px){
-.video{
+@media (min-width:700px){
+.gallery{
 display:flex;
 justify-content:center;
 }
@@ -75,6 +95,15 @@ justify-content:center;
 
 <body>
 
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="about.html">Over mij</a>
+<a href="workshops.html">Workshops</a>
+<a href="agenda.html">Agenda</a>
+<a href="contact.html">Contact</a>
+</div>
+
 <div class="container">
 
 <h1>Workshops bij Studio Ilse</h1>
@@ -82,8 +111,7 @@ justify-content:center;
 <h2>Workshop vazen decoreren</h2>
 
 <p>
-Bij een nieuw (voor)jaar hoort natuurlijk een nieuwe creatieve workshop!  
-Het decoreren van vazen met de <strong>reversed decoupage techniek</strong> is ontzettend leuk om te doen — en het resultaat is echt verbluffend.
+Bij een nieuw (voor)jaar hoort natuurlijk een nieuwe creatieve workshop! Het decoreren van vazen met de <strong>reversed decoupage techniek</strong> is ontzettend leuk om te doen — en het resultaat is echt verbluffend.
 </p>
 
 <p>
@@ -103,10 +131,8 @@ Heb je voldoende ruimte en minimaal 5 deelnemers? Neem dan gerust contact met mi
 </p>
 
 <div class="gallery">
-
-<img src="vaas-oranje.jpg" alt="Workshop vaas oranje">
-<img src="vaas-blauw.jpg" alt="Workshop vaas blauw">
-
+<img src="vaas-oranje.jpg" alt="Vaas oranje">
+<img src="vaas-blauw.jpg" alt="Vaas blauw">
 </div>
 
 </div>
