@@ -61,3 +61,23 @@ display:flex;
 justify-content:center;
 }
 }
+/* NAVIGATIE */
+
+.nav{
+background: rgba(255,182,193,0.9);
+padding:15px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+.nav a:hover{
+color:#ff4fa3;
+}
