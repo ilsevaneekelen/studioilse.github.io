@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio - Studio Ilse</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Portfolio - Studio Ilse</title>
+
+<style>
+
+body{
+margin:0;
+font-family: Arial, sans-serif;
+background: rgba(255,182,193,0.25);
+text-align:center;
+}
+
+/* NAV */
+
+.nav{
+background: rgba(255,182,193,0.9);
+padding:15px;
+position:sticky;
+top:0;
+}
+
+.nav a{
+margin:0 15px;
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1000px;
+margin:40px auto;
+}
+
+/* TITEL */
+
+h1{
+margin-bottom:10px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.gallery img{
+width:280px;
+margin:15px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+</style>
+
 </head>
+
 <body>
+
 <div class="nav">
 <a href="index.html">Home</a>
 <a href="portfolio.html">Portfolio</a>
@@ -14,18 +76,20 @@
 <a href="agenda.html">Agenda</a>
 <a href="contact.html">Contact</a>
 </div>
-<nav>
-  <a href="index.html">Home</a> | 
-  <a href="about.html">Over mij</a> | 
-  <a href="portfolio.html">Portfolio</a> | 
-  <a href="contact.html">Contact</a>
-</nav>
 
-<h1>Mijn Werk</h1>
-<p>Hier kun je een selectie van mijn projecten en creaties bekijken.</p>
+<div class="container">
 
-<img src="images/sample1.jpg" alt="Voorbeeld project">
-<img src="images/sample2.jpg" alt="Voorbeeld project">
+<h1>Mijn werk</h1>
+<p>Een selectie van mijn creatieve projecten</p>
+
+<div class="gallery">
+
+<img src="vaas-oranje.jpg" alt="Vaas oranje">
+<img src="vaas-blauw.jpg" alt="Vaas blauw">
+
+</div>
+
+</div>
 
 </body>
 </html>
