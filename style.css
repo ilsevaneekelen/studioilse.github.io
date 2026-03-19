@@ -39,3 +39,25 @@ img {
   margin: 10px 0;
   border-radius: 8px;
 }
+/* FOTO GALLERY */
+
+.gallery{
+margin-top:30px;
+}
+
+.gallery img{
+width:100%;
+max-width:350px;
+margin:10px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* naast elkaar op groter scherm */
+
+@media (min-width: 700px){
+.gallery{
+display:flex;
+justify-content:center;
+}
+}
